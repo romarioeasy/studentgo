@@ -17,7 +17,6 @@ const PRODUCTS = [
     category: "SUV",
     description: "Compact electric SUV with dual motor AWD, up to 330 miles range, spacious cargo area and seating for up to 7.",
     image: "assets/produtos/car-02.jpg"
-    soldOut: true   // ← adiciona isso
   },
   {
     id: 3,
