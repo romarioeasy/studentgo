@@ -37,14 +37,16 @@ const PRODUCTS = [
     name: "Jeep Wrangler",
     category: "SUV",
     description: "Iconic off-road SUV with removable doors and roof, Trail Rated 4x4 capability and a 3.6L Pentastar V6 engine.",
-    image: "assets/produtos/car-05.jpg"
+    image: "assets/produtos/car-05.jpg",
+    soldOut: true
   },
   {
     id: 6,
     name: "Ford Mustang EcoBoost",
     category: "Sport",
     description: "2.3L EcoBoost 4-cylinder producing 330 hp, SYNC 4 infotainment, and the legendary Mustang pony car heritage.",
-    image: "assets/produtos/car-06.jpg"
+    image: "assets/produtos/car-06.jpg",
+    soldOut: true
   },
   {
     id: 7,
@@ -72,7 +74,8 @@ const PRODUCTS = [
     name: "Kia K5 GT",
     category: "Sedan",
     description: "Performance-focused sedan with a turbocharged 2.5L engine producing 290 hp, dual-clutch transmission and sport-tuned AWD.",
-    image: "assets/produtos/car-10.jpg"
+    image: "assets/produtos/car-10.jpg",
+    soldOut: true
   }
 ];
 
