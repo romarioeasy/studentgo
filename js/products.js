@@ -16,14 +16,16 @@ const PRODUCTS = [
     name: "Tesla Model Y",
     category: "SUV",
     description: "Compact electric SUV with dual motor AWD, up to 330 miles range, spacious cargo area and seating for up to 7.",
-    image: "assets/produtos/car-02.jpg"
+    image: "assets/produtos/car-02.jpg",
+    soldOut: true
   },
   {
     id: 3,
     name: "Honda Civic Sport",
     category: "Compact",
     description: "Sport-tuned suspension, turbocharged 1.5L engine, and a bold exterior with 18-inch wheels and sport pedals.",
-    image: "assets/produtos/car-03.jpg"
+    image: "assets/produtos/car-03.jpg",
+    soldOut: true
   },
   {
     id: 4,
@@ -45,8 +47,7 @@ const PRODUCTS = [
     name: "Ford Mustang EcoBoost",
     category: "Sport",
     description: "2.3L EcoBoost 4-cylinder producing 330 hp, SYNC 4 infotainment, and the legendary Mustang pony car heritage.",
-    image: "assets/produtos/car-06.jpg",
-    soldOut: true
+    image: "assets/produtos/car-06.jpg"
   },
   {
     id: 7,
